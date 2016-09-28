@@ -4,7 +4,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/mrtnbroder/superagent-rxjs/badge.svg?branch=master)](https://coveralls.io/github/mrtnbroder/superagent-rxjs?branch=master)
 [![Dependency Status](https://dependencyci.com/github/mrtnbroder/superagent-rxjs/badge)](https://dependencyci.com/github/mrtnbroder/superagent-rxjs)
 
-Return an RxJS v5 Observable from your superagent request
+Return an RxJS v5 Observable from your [superagent](https://visionmedia.github.io/superagent/) request
 
 ## Installation
 
