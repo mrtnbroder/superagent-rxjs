@@ -1,5 +1,6 @@
 # superagent-rxjs
 [![Build Status](https://travis-ci.org/mrtnbroder/superagent-rxjs.svg?branch=master)](https://travis-ci.org/mrtnbroder/superagent-rxjs)
+[![Dependency Status](https://dependencyci.com/github/mrtnbroder/superagent-rxjs/badge)](https://dependencyci.com/github/mrtnbroder/superagent-rxjs)
 
 Return an RxJS v5 Observable from your superagent request
 
@@ -26,10 +27,10 @@ import observify from 'superagent-rxjs'
 // adds the .observify() method to the superagent Request prototype
 const request = observify(superagent)
 
-// Use it
+// use it!
 const observable = request.get('http://example.com').observify()
 const subscription = observable.subscribe()
 
-// calling unsubscribe before the request has finished will abort the request!
+// calling unsubscribe before the request has finished will abort the request
 subscription.unsubscribe()
 ```
