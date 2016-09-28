@@ -20,6 +20,12 @@ if you haven't already, also add superagent as a dependency to your project:
 npm i -S superagent
 ```
 
+I also recommend to **explicitly** add rxjs as a dependency of your project:
+
+```shell
+npm i -S rxjs
+```
+
 ## Usage
 
 ```js
