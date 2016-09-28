@@ -1,4 +1,5 @@
 # superagent-rxjs
+[![Build Status](https://travis-ci.org/mrtnbroder/superagent-rxjs.svg?branch=master)](https://travis-ci.org/mrtnbroder/superagent-rxjs)
 
 Return an RxJS v5 Observable from your superagent request
 
