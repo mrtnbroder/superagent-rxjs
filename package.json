@@ -1,0 +1,45 @@
+{
+  "name": "superagent-rxjs",
+  "version": "1.0.0",
+  "description": "Superagent results wrapped within an RxJS 5 Observable",
+  "main": "src/index",
+  "scripts": {
+    "test": "ava",
+    "test-watch": "ava --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrtnbroder/superagent-rxjs.git"
+  },
+  "keywords": [
+    "rxjs",
+    "superagent",
+    "rx",
+    "reactive",
+    "rxnext",
+    "frp",
+    "fp",
+    "functional",
+    "async",
+    "observable",
+    "request",
+    "xhr"
+  ],
+  "author": "Martin Broder <hello@martinbroder.com> (https://martinbroder.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrtnbroder/superagent-rxjs/issues"
+  },
+  "homepage": "https://github.com/mrtnbroder/superagent-rxjs#readme",
+  "dependencies": {
+    "rxjs": "5.0.0-beta.12"
+  },
+  "devDependencies": {
+    "ava": "0.16.0",
+    "nock": "8.0.0",
+    "superagent": "2.3.0"
+  },
+  "peerDependencies": {
+    "superagent": "^2.0.0"
+  }
+}
