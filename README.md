@@ -1,4 +1,5 @@
 # superagent-rxjs
+[![GitHub version](https://badge.fury.io/gh/mrtnbroder%2Fsuperagent-rxjs.svg)](https://badge.fury.io/gh/mrtnbroder%2Fsuperagent-rxjs)
 [![Build Status](https://travis-ci.org/mrtnbroder/superagent-rxjs.svg?branch=master)](https://travis-ci.org/mrtnbroder/superagent-rxjs)
 [![Coverage Status](https://coveralls.io/repos/github/mrtnbroder/superagent-rxjs/badge.svg?branch=master)](https://coveralls.io/github/mrtnbroder/superagent-rxjs?branch=master)
 [![Dependency Status](https://dependencyci.com/github/mrtnbroder/superagent-rxjs/badge)](https://dependencyci.com/github/mrtnbroder/superagent-rxjs)
