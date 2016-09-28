@@ -48,3 +48,7 @@ subscription.unsubscribe()
 ### [`observify :: Request -> Request`](https://github.com/mrtnbroder/superagent-rxjs/blob/master/src/index.js#L4-L29)
 
 Adds the `observify` method to superagent's `Request.prototype` and returns a new superagent
+
+## Credits
+
+Thanks [Kriegslustig](https://github.com/Kriegslustig) for helping out on the tests 😄
