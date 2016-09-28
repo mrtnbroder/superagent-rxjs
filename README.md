@@ -4,7 +4,7 @@
 
 Return an RxJS v5 Observable from your superagent request
 
-# Installation
+## Installation
 
 Add it to your project via npm:
 
@@ -18,7 +18,7 @@ if you haven't already, also add superagent as a dependency to your project:
 npm i -S superagent
 ```
 
-# Usage
+## Usage
 
 ```js
 import superagent from 'superagent'
@@ -34,3 +34,9 @@ const subscription = observable.subscribe()
 // calling unsubscribe before the request has finished will abort the request
 subscription.unsubscribe()
 ```
+
+## API
+
+### [`observify :: Request -> Request`](https://github.com/mrtnbroder/superagent-rxjs/blob/master/src/index.js#L4-L29)
+
+Adds the `observify` method to superagent's `Request.prototype` and returns a new superagent
