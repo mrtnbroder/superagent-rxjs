@@ -13,6 +13,7 @@
     "build-umd": "NODE_ENV=development webpack src/index.js umd/VimcarAPI.js",
     "cleanup": "rm -rf es6 lib umd",
     "coverage": "nyc report --cache --reporter=text-lcov | coveralls",
+    "release": "npm run build && standard-version",
     "test": "ava"
   },
   "repository": {
