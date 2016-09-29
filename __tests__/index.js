@@ -2,12 +2,15 @@
 import test from 'ava'
 import nock from 'nock'
 import { Observable as O } from 'rxjs'
-import request from 'superagent'
+import superagent from 'superagent'
 import observify from '../src'
 
-observify(request)
-
+const request = observify(superagent)
 const URL = 'http://example.com'
+
+test.afterEach(() => {
+  nock.cleanAll()
+})
 
 test((t) => {
   t.truthy(request.Request.prototype.observify, 'it adds the observify method to the Request prototype')
