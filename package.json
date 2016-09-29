@@ -4,9 +4,8 @@
   "description": "Superagent results wrapped within an RxJS 5 Observable",
   "main": "src/index",
   "scripts": {
-    "test": "ava",
     "coverage": "nyc report --cache --reporter=text-lcov | coveralls",
-    "test-watch": "ava --watch"
+    "test": "ava"
   },
   "repository": {
     "type": "git",
