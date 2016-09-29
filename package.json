@@ -26,6 +26,9 @@
     "superagent",
     "xhr"
   ],
+  "engines": {
+    "node" : ">=4.0"
+  },
   "author": "Martin Broder <hello@martinbroder.com> (https://martinbroder.com)",
   "license": "MIT",
   "bugs": {
