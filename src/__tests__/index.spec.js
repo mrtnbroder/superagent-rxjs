@@ -3,7 +3,7 @@ import test from 'ava'
 import nock from 'nock'
 import { Observable as O } from 'rxjs'
 import superagent from 'superagent'
-import observify from '../src'
+import observify from '../'
 
 const request = observify(superagent)
 const URL = 'http://example.com'
