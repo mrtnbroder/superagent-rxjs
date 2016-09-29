@@ -29,7 +29,7 @@
     "node" : ">=4.0"
   },
   "author": "Martin Broder <hello@martinbroder.com> (https://martinbroder.com)",
-  "license": "MIT",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/mrtnbroder/superagent-rxjs/issues"
   },
