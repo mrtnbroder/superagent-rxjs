@@ -45,7 +45,7 @@ subscription.unsubscribe()
 
 ## API
 
-### [`observify :: Request -> Request`](https://github.com/mrtnbroder/superagent-rxjs/blob/master/src/index.js#L4-L29)
+### [`observify :: Request -> Request`](https://github.com/mrtnbroder/superagent-rxjs/blob/master/src/index.js#L4-L25)
 
 Adds the `observify` method to superagent's `Request.prototype` and returns a new superagent
 
