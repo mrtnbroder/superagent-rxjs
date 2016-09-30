@@ -29,11 +29,11 @@ npm i -S rxjs
 ## Usage
 
 ```js
-import superagent from 'superagent'
+import request from 'superagent'
 import observify from 'superagent-rxjs'
 
-// adds the .observify() method to the superagent Request prototype
-const request = observify(superagent)
+// mutates superagent's Request.prototype and adds the .observify() method to it
+observify(request)
 
 // use it!
 const observable = request.get('http://example.com').observify()
@@ -45,9 +45,9 @@ subscription.unsubscribe()
 
 ## API
 
-### [`observify :: Request -> Request`](https://github.com/mrtnbroder/superagent-rxjs/blob/master/src/index.js#L4-L25)
+### [`observify :: Request -> void`](https://github.com/mrtnbroder/superagent-rxjs/blob/master/src/index.js#L27-L31)
 
-Adds the `observify` method to superagent's `Request.prototype` and returns a new superagent
+Adds the `observify` method to superagent's `Request.prototype` and returns nothing
 
 ## Credits
 
