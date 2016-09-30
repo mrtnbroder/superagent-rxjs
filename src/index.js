@@ -27,5 +27,5 @@ const observify = function() {
 export default (superagent) => {
   superagent.Request.prototype.observify = observify
 
-  return superagent
+  return void 0
 }
