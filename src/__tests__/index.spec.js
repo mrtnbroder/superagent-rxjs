@@ -2,24 +2,25 @@
 import test from 'ava'
 import nock from 'nock'
 import { Observable as O } from 'rxjs'
-import superagent from 'superagent'
+import request from 'superagent'
 import observify from '../'
 
-const request = observify(superagent)
 const URL = 'http://example.com'
 
 test.afterEach(() => {
   nock.cleanAll()
 })
 
-test((t) => {
-  t.truthy(request.Request.prototype.observify, 'it adds the observify method to the Request prototype')
+test('it adds the observify method to the Request prototype', (t) => {
+  t.falsy(request.Request.prototype.observify)
+  observify(request)
+  t.truthy(request.Request.prototype.observify)
 })
 
-test((t) => {
+test('observify returns an instance of an Observable', (t) => {
   const req = request.get(URL).observify()
 
-  t.is(req instanceof O, true, 'observify returns an instance of an Observable')
+  t.truthy(req instanceof O)
 })
 
 test('passes when the request succeeds', (t) => {
