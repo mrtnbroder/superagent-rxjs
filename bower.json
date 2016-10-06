@@ -20,7 +20,11 @@
     "superagent",
     "xhr"
   ],
-  "moduleType": "amd",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
   "homepage": "https://github.com/mrtnbroder/superagent-rxjs",
   "ignore": [
     "**/.*",
