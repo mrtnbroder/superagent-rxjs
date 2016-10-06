@@ -26,6 +26,7 @@ const observify = function(): Observable<*> {
   })
 }
 
+// TODO: add libdefs for superagent
 export default (superagent: any): void => {
   superagent.Request.prototype.observify = observify
 
