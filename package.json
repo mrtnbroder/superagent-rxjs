@@ -38,7 +38,7 @@
     "xhr"
   ],
   "engines": {
-    "node": ">=4.0"
+    "node": ">=0.12"
   },
   "author": "Martin Broder <hello@martinbroder.com> (https://martinbroder.com)",
   "license": "ISC",
