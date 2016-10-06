@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.org/mrtnbroder/superagent-rxjs.svg?branch=master)](https://travis-ci.org/mrtnbroder/superagent-rxjs)
 [![Coverage Status](https://coveralls.io/repos/github/mrtnbroder/superagent-rxjs/badge.svg?branch=master)](https://coveralls.io/github/mrtnbroder/superagent-rxjs?branch=master)
 [![Dependency Status](https://dependencyci.com/github/mrtnbroder/superagent-rxjs/badge)](https://dependencyci.com/github/mrtnbroder/superagent-rxjs)
+[![Standard Version](https://img.shields.io/badge/release-standard%20version-brightgreen.svg)](https://github.com/mrtnbroder/superagent-rxjs)
 
 Return an RxJS v5 Observable from your [superagent](https://visionmedia.github.io/superagent/) request
 
