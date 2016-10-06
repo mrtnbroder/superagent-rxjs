@@ -1,0 +1,10 @@
+[ignore]
+.*/node_modules/.*
+
+[include]
+
+[libs]
+decls
+flow-typed
+
+[options]
