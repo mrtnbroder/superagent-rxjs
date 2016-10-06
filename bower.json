@@ -27,10 +27,8 @@
   ],
   "homepage": "https://github.com/mrtnbroder/superagent-rxjs",
   "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+    "*",
+    "!umd/*",
+    "!*.md"
   ]
 }
