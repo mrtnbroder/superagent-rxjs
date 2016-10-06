@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.2.0"></a>
+# [2.2.0](https://github.com/mrtnbroder/superagent-rxjs/compare/v2.1.0...v2.2.0) (2016-10-06)
+
+
+### Bug Fixes
+
+* **package:** add back build script to release ([7fd6551](https://github.com/mrtnbroder/superagent-rxjs/commit/7fd6551))
+
+
+### Features
+
+* add bower support ([#3](https://github.com/mrtnbroder/superagent-rxjs/issues/3)) ([5f4e18b](https://github.com/mrtnbroder/superagent-rxjs/commit/5f4e18b))
+
+
+
 <a name="2.1.0"></a>
 # [2.1.0](https://github.com/mrtnbroder/superagent-rxjs/compare/v2.0.0...v2.1.0) (2016-10-06)
 
