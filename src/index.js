@@ -1,7 +1,9 @@
+/* @flow */
 
+import type { Observable } from 'rxjs'
 import { Observable as O } from 'rxjs/Observable'
 
-const observify = function() {
+const observify = function(): Observable<*> {
   return O.create((o) => {
     this.end((err, res) => {
       if (err) {
@@ -24,7 +26,8 @@ const observify = function() {
   })
 }
 
-export default (superagent) => {
+// TODO: add libdefs for superagent
+export default (superagent: any): void => {
   superagent.Request.prototype.observify = observify
 
   return void 0

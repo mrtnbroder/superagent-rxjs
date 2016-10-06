@@ -11,10 +11,12 @@
     "build-es": "BABEL_ENV=es babel ./src -d es6 --ignore '__tests__'",
     "build-min": "NODE_ENV=production webpack -p src/index.js umd/VimcarAPI.min.js",
     "build-umd": "NODE_ENV=development webpack src/index.js umd/VimcarAPI.js",
+    "ci-test": "npm run typecheck",
     "cleanup": "rm -rf es6 lib umd",
     "coverage": "nyc report --cache --reporter=text-lcov | coveralls",
-    "release": "npm run build && standard-version",
-    "test": "ava"
+    "release": "standard-version",
+    "test": "ava",
+    "typecheck": "flow check"
   },
   "repository": {
     "type": "git",
@@ -53,9 +55,11 @@
     "babel-eslint": "7.0.0",
     "babel-loader": "6.2.5",
     "babel-plugin-add-module-exports": "0.2.1",
+    "babel-plugin-flow-comments": "6.3.19",
     "babel-preset-es2015": "6.16.0",
     "babel-register": "6.16.0",
     "coveralls": "2.11.14",
+    "flow-bin": "0.33.0",
     "nock": "8.0.0",
     "nyc": "8.3.0",
     "superagent": "2.3.0",
