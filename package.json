@@ -11,9 +11,10 @@
     "build-es": "BABEL_ENV=es babel ./src -d es6 --ignore '__tests__'",
     "build-min": "NODE_ENV=production webpack -p src/index.js umd/VimcarAPI.min.js",
     "build-umd": "NODE_ENV=development webpack src/index.js umd/VimcarAPI.js",
+    "ci-test": "npm run typecheck",
     "cleanup": "rm -rf es6 lib umd",
     "coverage": "nyc report --cache --reporter=text-lcov | coveralls",
-    "release": "npm run build && standard-version",
+    "release": "standard-version",
     "test": "ava",
     "typecheck": "flow check"
   },
