@@ -14,7 +14,8 @@
     "ci-test": "npm run typecheck",
     "cleanup": "rm -rf es6 lib umd",
     "coverage": "nyc report --cache --reporter=text-lcov | coveralls",
-    "release": "npm run build && standard-version",
+    "prepublish": "npm run build",
+    "release": "standard-version",
     "test": "ava",
     "typecheck": "flow check"
   },
