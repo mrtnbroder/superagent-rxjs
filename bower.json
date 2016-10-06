@@ -1,0 +1,32 @@
+{
+  "name": "superagent-rxjs",
+  "description": "Superagent results wrapped within an RxJS 5 Observable",
+  "main": "umd/superagent-rxjs.js",
+  "authors": [
+    "Martin Broder <hello@martinbroder.com> (https://martinbroder.com)"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "async",
+    "fp",
+    "frp",
+    "functional",
+    "observable",
+    "reactive",
+    "request",
+    "rx",
+    "rxjs",
+    "rxnext",
+    "superagent",
+    "xhr"
+  ],
+  "moduleType": "amd",
+  "homepage": "https://github.com/mrtnbroder/superagent-rxjs",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
