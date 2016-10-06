@@ -1,6 +1,6 @@
 {
   "name": "superagent-rxjs",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "Superagent results wrapped within an RxJS 5 Observable",
   "main": "lib/index",
   "module": "es6/index",
