@@ -6,15 +6,16 @@
   "module": "es6/index",
   "jsnext:main": "es6/index",
   "scripts": {
-    "build": "npm run cleanup && npm run build-cjs && npm run build-es",
+    "build": "npm run cleanup && npm run build-cjs && npm run build-es && npm run build-umd && npm run build-min",
     "build-cjs": "BABEL_ENV=cjs babel ./src -d lib --ignore '__tests__'",
     "build-es": "BABEL_ENV=es babel ./src -d es6 --ignore '__tests__'",
-    "build-min": "NODE_ENV=production webpack -p src/index.js umd/VimcarAPI.min.js",
-    "build-umd": "NODE_ENV=development webpack src/index.js umd/VimcarAPI.js",
+    "build-min": "NODE_ENV=production webpack -p src/index.js umd/superagent-rxjs.min.js",
+    "build-umd": "NODE_ENV=development webpack src/index.js umd/superagent-rxjs.js",
     "ci-test": "npm run typecheck",
     "cleanup": "rm -rf es6 lib umd",
     "coverage": "nyc report --cache --reporter=text-lcov | coveralls",
-    "release": "npm run build && standard-version",
+    "prepublish": "npm run build",
+    "release": "standard-version",
     "test": "ava",
     "typecheck": "flow check"
   },
@@ -37,7 +38,7 @@
     "xhr"
   ],
   "engines": {
-    "node": ">=4.0"
+    "node": ">=0.12"
   },
   "author": "Martin Broder <hello@martinbroder.com> (https://martinbroder.com)",
   "license": "ISC",
@@ -46,7 +47,8 @@
   },
   "homepage": "https://github.com/mrtnbroder/superagent-rxjs#readme",
   "dependencies": {
-    "rxjs": "^5.0.0-beta.0"
+    "rxjs": "^5.0.0-beta.0",
+    "superagent": "^2.0.0"
   },
   "devDependencies": {
     "ava": "0.16.0",
@@ -62,10 +64,10 @@
     "flow-bin": "0.33.0",
     "nock": "8.0.0",
     "nyc": "8.3.0",
-    "superagent": "2.3.0",
     "webpack": "2.1.0-beta.25"
   },
   "peerDependencies": {
+    "rxjs": "^5.0.0-beta.0",
     "superagent": "^2.0.0"
   },
   "files": [
