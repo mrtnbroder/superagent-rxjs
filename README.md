@@ -9,7 +9,7 @@ Return an RxJS v5 Observable from your [superagent](https://visionmedia.github.i
 
 ## Installation
 
-Add it to your project via npm or bower:
+Add it to your project via npm or [yarn](https://github.com/yarnpkg/yarn):
 
 ```shell
 npm i -S superagent-rxjs
@@ -18,7 +18,7 @@ npm i -S superagent-rxjs
 or
 
 ```shell
-bower install superagent-rxjs
+yarn i superagent-rxjs
 ```
 
 if you haven't already, also add superagent as a dependency to your project:
