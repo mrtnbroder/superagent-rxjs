@@ -62,8 +62,8 @@
     "babel-register": "6.16.3",
     "coveralls": "2.11.14",
     "flow-bin": "0.33.0",
-    "nock": "8.0.0",
-    "nyc": "8.3.0",
+    "nock": "8.1.0",
+    "nyc": "8.3.1",
     "webpack": "2.1.0-beta.25"
   },
   "peerDependencies": {
