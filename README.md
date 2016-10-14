@@ -1,36 +1,25 @@
 # superagent-rxjs
-[![GitHub version](https://badge.fury.io/gh/mrtnbroder%2Fsuperagent-rxjs.svg)](https://badge.fury.io/gh/mrtnbroder%2Fsuperagent-rxjs)
-[![Build Status](https://travis-ci.org/mrtnbroder/superagent-rxjs.svg?branch=master)](https://travis-ci.org/mrtnbroder/superagent-rxjs)
-[![Coverage Status](https://coveralls.io/repos/github/mrtnbroder/superagent-rxjs/badge.svg?branch=master)](https://coveralls.io/github/mrtnbroder/superagent-rxjs?branch=master)
-[![Dependency Status](https://dependencyci.com/github/mrtnbroder/superagent-rxjs/badge)](https://dependencyci.com/github/mrtnbroder/superagent-rxjs)
-[![Standard Version](https://img.shields.io/badge/release-standard%20version-brightgreen.svg)](https://github.com/mrtnbroder/superagent-rxjs)
+[![npm](https://img.shields.io/npm/v/superagent-rxjs.svg?style=flat-square)]()
+[![Build Status](https://img.shields.io/travis/mrtnbroder/superagent-rxjs/master.svg?maxAge=2592000&style=flat-square)]()
+[![Coveralls](https://img.shields.io/coveralls/mrtnbroder/superagent-rxjs.svg?maxAge=2592000&style=flat-square)]()
+[![Dependency Status](https://dependencyci.com/github/mrtnbroder/superagent-rxjs/badge?style=flat-square)](https://dependencyci.com/github/mrtnbroder/superagent-rxjs)
+[![Standard Version](https://img.shields.io/badge/release-standard%20version-brightgreen.svg?maxAge=2592000&style=flat-square)](https://github.com/mrtnbroder/superagent-rxjs)
+[![npm](https://img.shields.io/npm/dt/superagent-rxjs.svg?maxAge=2592000&style=flat-square)]()
 
 Return an RxJS v5 Observable from your [superagent](https://visionmedia.github.io/superagent/) request
 
 ## Installation
 
-Add it to your project via npm or [yarn](https://github.com/yarnpkg/yarn):
+Add it to your project via npm or [yarn](https://github.com/yarnpkg/yarn) (recommended):
 
 ```shell
-npm i -S superagent-rxjs
+npm install --save superagent-rxjs
 ```
 
-or
+If you haven't already, also add superagent and rxjs as a dependency to your project:
 
 ```shell
-yarn i superagent-rxjs
-```
-
-if you haven't already, also add superagent as a dependency to your project:
-
-```shell
-npm i -S superagent
-```
-
-I also recommend to **explicitly** add rxjs as a dependency of your project:
-
-```shell
-npm i -S rxjs
+npm install --save superagent rxjs
 ```
 
 ## Usage
