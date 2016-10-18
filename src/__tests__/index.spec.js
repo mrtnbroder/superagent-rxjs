@@ -11,9 +11,11 @@ test.afterEach(() => {
   nock.cleanAll()
 })
 
-test('it adds the observify method to the Request prototype', (t) => {
-  t.falsy(request.Request.prototype.observify)
+test.before(() => {
   observify(request)
+})
+
+test('it adds the observify method to the Request prototype', (t) => {
   t.truthy(request.Request.prototype.observify)
 })
 
@@ -62,3 +64,25 @@ test.cb('does not abort the request when unsubscribe is called after the request
     t.end()
   }, 15)
 })
+
+test.serial.cb('is resubscribable and fails', (t) => {
+  nock(URL).get('/').reply(500)
+  nock(URL).get('/').reply(500)
+  nock(URL).get('/').reply(500)
+  request.get(URL).observify().retry(2).subscribe(
+    () => { t.fail(); t.end() },
+    () => { t.pass(); t.end() }
+  )
+})
+
+test.serial.cb('is resubscribable and succeeds', (t) => {
+  // Fail twice then succeed
+  nock(URL).get('/').reply(500)
+  nock(URL).get('/').reply(500)
+  nock(URL).get('/').reply(200)
+  request.get(URL).observify().retry(2).subscribe(
+    () => { t.pass(); t.end() },
+    () => { t.fail(); t.end() }
+  )
+})
+
