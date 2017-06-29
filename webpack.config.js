@@ -12,8 +12,8 @@ module.exports = {
   externals: Object.keys(p.dependencies).concat('rxjs/Observable'),
 
   module: {
-    loaders: [
-      { test: /\.js$/, exclude: /node_modules/, loader: 'babel' }
+    rules: [
+      { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' }
     ]
   },
 
