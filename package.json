@@ -47,8 +47,8 @@
   },
   "homepage": "https://github.com/mrtnbroder/superagent-rxjs#readme",
   "dependencies": {
-    "rxjs": "^5.4.1",
-    "superagent": "^3.5.2"
+    "rxjs": "^6.3.3",
+    "superagent": "^3.8.3"
   },
   "devDependencies": {
     "ava": "0.20.0",
@@ -67,8 +67,8 @@
     "webpack": "3.0.0"
   },
   "peerDependencies": {
-    "rxjs": "^5",
-    "superagent": "^2 || ^3"
+    "rxjs": "^6",
+    "superagent": "^3"
   },
   "files": [
     "*.md",
