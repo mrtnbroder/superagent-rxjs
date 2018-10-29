@@ -1,7 +1,6 @@
 /* @flow */
 
-import type { Observable } from 'rxjs'
-import { Observable as O } from 'rxjs/Observable'
+import { Observable as O, type Observable } from 'rxjs'
 
 const observify = function(): Observable<*> {
   return O.create((o) => {
